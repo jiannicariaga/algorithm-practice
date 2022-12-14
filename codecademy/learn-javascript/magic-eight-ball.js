@@ -2,9 +2,7 @@
 
 const userName = '';
 
-userName
-  ? console.log(`Hello, ${userName}!`)
-  : console.log('Hello!');
+userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
 
 const userQuestion = 'Will I get a job?';
 

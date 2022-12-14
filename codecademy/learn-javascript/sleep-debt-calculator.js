@@ -2,6 +2,7 @@
 
 const getActualSleepHours = () => 6 + 5 + 5 + 7 + 10 + 8 + 7;
 const getIdealSleepHours = hours => hours * 7;
+
 const calculateSleepDebt = () => {
   const actualSleepHours = getActualSleepHours();
   const idealSleepHours = getIdealSleepHours(8);

@@ -1,5 +1,5 @@
-import { getCompanies, getRoles } from './modules/salaryData.js';
-import { getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary } from './modules/workAroundModule.js';
+import { getCompanies, getRoles } from './modules/salary-data.js';
+import { getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary } from './modules/work-around-module.js';
 
 const companies = getCompanies();
 const roles = getRoles();

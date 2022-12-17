@@ -1,0 +1,101 @@
+body {
+  background-color: #7f0920;
+  color: #0a0408;
+}
+
+#app-title {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-family: Staatliches, sans-serif;
+  font-size: 80px;
+}
+
+#genre-form,
+#play-btn {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-family: "Fredoka One", sans-serif;
+}
+
+#movie-info {
+  width: 65%;
+  margin: 32px auto;
+}
+
+#movie-info::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#movie-poster,
+#movie-text {
+  width: 50%;
+  float: left;
+}
+
+img #movie-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#movie-text {
+  font-family: Questrial, sans-serif;
+  color: #fefbea;
+  line-height: 1.25;
+}
+
+#movie-title,
+#movie-overview {
+  padding: 32px;
+}
+
+#play-btn {
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #b97828;
+  color: #fdc238;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 200px;
+  height: auto;
+}
+
+#like-or-dislike-btns {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#like-btn,
+#dislike-btn {
+  padding: 15px 25px;
+  font-size: 25px;
+  border-radius: 12px;
+  border-style: none;
+  cursor: pointer;
+}
+
+#like-btn {
+  background-color: #249e57;
+  color: darkgreen;
+}
+
+#dislike-btn {
+  background-color: #c74a4a;
+  color: #910000;
+}

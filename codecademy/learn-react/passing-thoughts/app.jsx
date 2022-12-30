@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { AddThoughtForm } from './AddThoughtForm';
-import { Thought } from './Thought';
+import { AddThoughtForm } from './addThoughtForm';
+import { Thought } from './thought';
 import { generateId, getNewExpirationTime } from './utilities';
 
 function App() {

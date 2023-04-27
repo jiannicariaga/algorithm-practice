@@ -13,3 +13,5 @@ function solution(n, m) {
 }
 
 solution(10, 11);
+
+// (╯°□°)╯︵ ┻━┻

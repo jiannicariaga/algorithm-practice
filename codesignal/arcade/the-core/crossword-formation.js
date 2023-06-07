@@ -42,6 +42,6 @@ function solution(words) {
   return getWordCombos(words).reduce((solutions, combo) => solutions + getSolutions(combo), 0);
 }
 
-solution();
+solution(['crossword', 'square', 'formation', 'something']);
 
 // (╯°□°)╯︵ ┻━┻ (╯°□°)╯︵ ┻━┻ (╯°□°)╯︵ ┻━┻

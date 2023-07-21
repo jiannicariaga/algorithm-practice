@@ -4,7 +4,7 @@ function solution(line) {
   const num = line.match(/^(\d{1,2})#([0-9a-f]+)#$/i);
   return num
     ? [...num[2]].every(v => !isNaN(parseInt(v, num[1]))) && num[1] >= 2 && num[1] <= 16
-    : false;
+    : false
 }
 
 solution('123_456_789');

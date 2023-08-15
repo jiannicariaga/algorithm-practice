@@ -1,19 +1,20 @@
 function solution(startPosition, speed) {
-  let meetCount = -1;
-  let currentMeet = -1;
+  let meetings = 1;
   for (let i = 0; i < startPosition.length; i++) {
     for (let j = i + 1; j < startPosition.length; j++) {
-      const meetPoint = (startPosition[i] - startPosition[j]) / (speed[j] - speed[i]);
-      if (meetPoint >= 0) {
-        currentMeet = 2;
-        for (let k = j + 1; k < startPosition.length; k++) {
-          if (startPosition[i] + speed[i] * meetPoint === startPosition[k] + speed[k] * meetPoint) currentMeet++;
-        }
-        if (currentMeet > meetCount) meetCount = currentMeet;
+      const distDiff = startPosition[j] - startPosition[i];
+      const speedDiff = speed[i] - speed[j];
+      let count = 0;
+      if (speedDiff === 0 && distDiff !== 0) continue;
+      for (let k = 0; k < startPosition.length; k++) {
+        if (startPosition[k] * speedDiff + speed[k] * distDiff === startPosition[i] * speedDiff + speed[i] * distDiff) count++;
       }
+      if (!count) continue;
+      if (count > meetings) meetings = count;
     }
   }
-  return meetCount;
+  if (meetings < 2) meetings = -1;
+  return meetings;
 }
 
 solution([1, 4, 2], [27, 18, 24]);
